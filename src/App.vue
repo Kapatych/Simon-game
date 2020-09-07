@@ -2,7 +2,7 @@
   <div id="app">
     <TheHeader />
     <main class="main">
-      <Simon />
+      <Game />
     </main>
     <TheFooter />
   </div>
@@ -11,10 +11,10 @@
 <script>
 import TheHeader from "@/components/TheHeader";
 import TheFooter from "@/components/TheFooter";
-import Simon from "@/views/Simon.vue";
+import Game from "@/views/Game.vue";
 export default {
   name: "App",
-  components: { TheHeader, TheFooter, Simon }
+  components: { TheHeader, TheFooter, Game }
 };
 </script>
 
@@ -51,11 +51,13 @@ p {
   display: flex;
   flex-direction: column;
 }
+
 .container {
   margin: 0 auto;
   padding: 0 20px;
   max-width: 1200px;
 }
+
 .main {
   flex: 1 0 auto;
 }
